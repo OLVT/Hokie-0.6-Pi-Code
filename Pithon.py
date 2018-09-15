@@ -18,7 +18,7 @@ try:
     print('Script started successfully')
 
     try:
-        os.system('sudo cp -r /Data /media/usb/College') #Change copy to directory to reflect drive being used
+        os.system('sudo cp -r /Data /media/usb') #Change copy to directory to reflect drive being used
     except:
         print('Copy Error')
 
@@ -53,6 +53,6 @@ try:
                 file.write(completeLine)
                 file.close()
             except:
-                print('Serial Read Error')
+                print('Serial Decode Error')
 except:
-    os.system('sudo reboot')
+    #os.system('sudo reboot')
